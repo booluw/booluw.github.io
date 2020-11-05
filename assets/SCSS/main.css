@@ -1,14 +1,50 @@
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-weight: bold;
+}
+
 html {
   font-size: 65.2%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: Poppins,sans-serif;
+  font-family: Raleway,sans-serif;
   padding: 0;
   margin: 0;
   font-size: 1.6rem;
-  color: #4a4f5c;
   font-weight: normal;
+  background-color: white;
 }
 
 *,

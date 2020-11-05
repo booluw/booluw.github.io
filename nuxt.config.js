@@ -18,7 +18,7 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'assets/scss/main.css',
-    'assets/font/ionicons.min.css'
+    'assets/fonts/ionicons.min.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
