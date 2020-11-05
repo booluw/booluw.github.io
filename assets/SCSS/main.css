@@ -1,0 +1,67 @@
+html {
+  font-size: 65.2%;
+}
+
+body {
+  font-family: Poppins,sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  color: #4a4f5c;
+  font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+  margin: 0 2rem;
+  height: auto;
+}
+
+@media (min-width: 1000px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 5rem;
+  }
+  .row .col-1 {
+    width: calc(100% / 6);
+  }
+  .row .col-2 {
+    width: calc(100% / 3);
+  }
+  .row .col-3 {
+    width: calc(100% / 2);
+  }
+  .row .col-4 {
+    width: calc(100% / 1.5);
+  }
+  .row .col-5 {
+    width: calc(100% / 1.2);
+  }
+  .row .col-6 {
+    width: 100%;
+  }
+  .row [class^="col-"] {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .row [class^="col-"]:not(:last-of-type) {
+    margin-right: 2rem;
+  }
+}
+/*# sourceMappingURL=main.css.map */
