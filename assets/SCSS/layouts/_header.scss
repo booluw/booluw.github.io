@@ -1,0 +1,166 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+  background-color: transparent;
+
+  &--fixed {
+    box-shadow: 0 3px 3px rgba(black, .1);
+  }
+
+  &__logo {
+    font-weight: normal;
+    color: $color-base;
+  }
+
+  &__hamburger {
+    display: block;
+    flex-basis: 10%;
+    cursor: pointer;
+
+    .line {
+      padding: .1rem;
+      margin: 0 0 .2rem;
+      width: 100%;
+      background-color: $color-base;
+      transition: transform .3s ease-in-out;
+    }
+  }
+
+  &__nav {
+    transform: translateX(-1000rem);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $color-base;
+    color: white;
+    padding: $padding--desktop $padding;
+    transition: transform .5s ease-in-out;
+
+    .header__hamburger {
+
+      .line {
+        background-color: white;
+      }
+    }
+  }
+
+  .nav-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__text {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, 0) rotate(-90deg);
+      margin: $padding;
+      opacity: .8;
+    }
+  }
+}
+
+.nav {
+  list-style-type: none;
+  margin: $padding--desktop 0 0 1rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 0 1rem $padding;
+    border-bottom: .1rem solid rgba(white, .3);
+    transition: .3s ease-in-out;
+
+    &:hover {
+      border-color: white;
+      padding: 1rem 0rem 1rem 1rem;
+    }
+  }
+}
+
+#menu-toggler {
+  display: none;
+
+  &:checked {
+    & ~ .header__hamburger,
+    & ~ .header__nav .nav-header .header__hamburger {
+      .line {
+        transform: rotate(45deg) translate(-2px, 0);
+
+        &:last-of-type {
+          transform: rotate(-45deg) translate(3px, -5px);
+        }
+      }
+    }
+
+    & ~ .header__nav {
+      transform: translateX(0);
+    }
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .header {
+    padding: 3rem $padding--desktop;
+
+    &__logo {
+      font-size: 3rem;
+    }
+
+    &__hamburger {
+      flex-basis: 3%;
+      
+      .line {
+        padding: .1rem;
+        margin: 0 0 .5rem;
+      }
+    }
+
+    &__nav {
+      padding: 10rem 10rem 10rem 25rem;
+    }
+  }
+
+  .nav-header {
+    
+    &__text {
+      width: 15%!important;
+      margin: 0 10rem 0!important;
+    }
+  }
+
+  .nav {
+
+    &__link {
+      font-size: 2rem;
+      margin: 0 0 4rem;
+    }
+  }
+
+  #menu-toggler {
+  
+    &:checked {
+      & ~ .header__hamburger,
+      & ~ .header__nav .nav-header .header__hamburger {
+        .line {
+          transform: rotate(45deg) translate(-1px, 2px);
+        }
+      }
+    }
+  }
+  
+}
