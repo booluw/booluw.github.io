@@ -15,8 +15,8 @@
   <section class="section" id="projects">
     <h3 class="heading--sub">Brands I've worked with</h3>
     <div class="section__slider">
-      <img src="~assets/img/DIATHEKE-Empire.png" alt="Diatheke Empire Logo" />
-      <img src="~assets/img/CRYPTOWISE.jpg" alt="Cryptowise Logo" />
+      <img src="/img/DIATHEKE-Empire.png" alt="Diatheke Empire Logo" />
+      <img src="/img/CRYPTOWISE.jpg" alt="Cryptowise Logo" />
     </div>
   </section>
   <div class="u-placeholder"></div>
@@ -24,7 +24,7 @@
     <h3 class="heading--sub">Projects I've worked on</h3>
     <div class="section__slider">
       <a href="//diathekeempire.com" target="_blank" rel="noreferral" class="card">
-        <img src="~assets/img/DIATHEKE-Web.png" class="card__img" alt="A screenshot of DiathekeEmpire.com" />
+        <img src="/img/DIATHEKE-Web.png" class="card__img" alt="A screenshot of DiathekeEmpire.com" />
         <div class="card__header">
           <span class="card__tag">Nuxt JS</span>
           <span class="card__tag">Static</span>
@@ -36,7 +36,7 @@
         </p>
       </a>
       <a href="//diathekeempire.com" target="_blank" rel="noreferral" class="card">
-        <img src="~assets/img/CRYPTOWISE-Web.png" class="card__img" alt="A screenshot of cryptowise.com.ng" />
+        <img src="/img/CRYPTOWISE-Web.png" class="card__img" alt="A screenshot of cryptowise.com.ng" />
         <div class="card__header">
           <span class="card__tag">VUE JS</span>
           <span class="card__tag">Web App</span>
@@ -48,7 +48,7 @@
         </p>
       </a>
       <a href="//ike-pro.tk" target="_blank" rel="noreferral" class="card">
-        <img src="~assets/img/HikePro-Web.png" class="card__img" alt="A screenshot of hike-pro.tk" />
+        <img src="/img/HikePro-Web.png" class="card__img" alt="A screenshot of hike-pro.tk" />
         <div class="card__header">
           <span class="card__tag">VUE JS</span>
           <span class="card__tag">Landing Page</span>
@@ -59,7 +59,7 @@
         </p>
       </a>
       <a href="//getchange-demo.firebaseapp.com/dashboard" target="_blank" rel="noreferral" class="card">
-        <img src="~assets/img/GETCHANGE-Web.png" class="card__img" alt="A screenshot of Getchange" />
+        <img src="/img/GETCHANGE-Web.png" class="card__img" alt="A screenshot of Getchange" />
         <div class="card__header">
           <span class="card__tag">VUE JS</span>
           <span class="card__tag">Dashboard</span>
@@ -81,6 +81,46 @@ export default {
   name: 'Index',
   components: {
     'app-jumbotron': AppJumbotronVue
+  },
+  head() {
+    return {
+      title: 'Boluwatife Johnson, FrondEnd developer and CS student',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'I build interactive, user friendly and mobile responsive websites.'
+        },
+        {
+          name: 'keyword',
+          content: 'Web development, Junior web developer, VUE JS developer, TechNG, Boluwatife Johnson'
+        },
+        {
+          property: 'og:title',
+          content: 'Boluwatife Johnson, VUE JS developer'
+        },
+        {
+          property: 'og:description',
+          content: 'Boluwatife Johnson is a VUE JS developer that builds fast, responsive and user friendly websites using VUE JS, Sass, Nuxt JS'
+        },
+        {
+          property: 'og:url',
+          content: 'http://booluw.me'
+        },
+        {
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        },
+        {
+          property: 'og:site_name',
+          content: 'Booluw_me'
+        },
+        {
+          property: 'twitter:site',
+          content: '@booluw'
+        }
+      ]
+    }
   }
 }
 </script>
