@@ -1,0 +1,26 @@
+.heading {
+
+  &--sub {
+    opacity: .6;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .heading {
+
+    &--sub {
+      font-size: 2rem;
+    }
+  }
+
+  .paragraph {
+    font-size: 2rem;
+
+    &--w-80 {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

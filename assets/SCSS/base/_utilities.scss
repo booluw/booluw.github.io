@@ -1,0 +1,17 @@
+.u {
+  &-placeholder {
+    padding: $padding 0 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .u-ml--desktop-5 {
+    margin-left: $padding--desktop;
+  }
+
+  .u {
+    &-placeholder {
+      padding: $padding 0 0;
+    }
+  }
+}

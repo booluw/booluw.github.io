@@ -7,7 +7,13 @@
   background-color: transparent;
 
   &--fixed {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
     box-shadow: 0 3px 3px rgba(black, .1);
+    z-index: 2;
   }
 
   &__logo {
@@ -30,6 +36,7 @@
   }
 
   &__nav {
+    z-index: 3;
     transform: translateX(-1000rem);
     position: fixed;
     top: 0;
@@ -83,10 +90,20 @@
     margin: 0 0 1rem $padding;
     border-bottom: .1rem solid rgba(white, .3);
     transition: .3s ease-in-out;
+    font-weight: 500;
 
     &:hover {
       border-color: white;
       padding: 1rem 0rem 1rem 1rem;
+    }
+  }
+
+  .section {
+    margin: $padding--desktop 0!important;
+    padding: 0 $padding;
+
+    &__list {
+      font-weight: normal;
     }
   }
 }
@@ -148,6 +165,10 @@
     &__link {
       font-size: 2rem;
       margin: 0 0 4rem;
+    }
+
+    .section {
+      padding: 0;
     }
   }
 

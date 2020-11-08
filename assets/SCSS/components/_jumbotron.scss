@@ -1,0 +1,53 @@
+.jumbotron {
+  height: 85vh;
+  padding: $padding--desktop $padding;
+  overflow: hidden;
+
+  .row {background-color: transparent;}
+
+  &__heading {
+    &--sub {
+      font-weight: 500;
+      font-size: 1.8rem;
+      color: rgba($color-base, .6);
+    }
+    &--main {
+      font-size: 5rem;
+      margin: 0 0 1rem;
+    }
+  }
+
+  &__btn {
+    margin: 2rem 0 0;
+  }
+
+  &__img {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .jumbotron {
+    padding: $padding--desktop;
+    height: 90vh;
+
+    &__heading {
+      &--sub {
+        font-size: 3rem;
+      }
+      &--main {
+        font-size: 7rem;
+      }
+    }
+
+    .paragraph {
+      width: 70%;
+      font-size: 2rem;
+    }
+
+    &__btn {
+      margin: 2rem 0 0;
+    }
+  }
+}

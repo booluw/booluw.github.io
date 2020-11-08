@@ -1,14 +1,23 @@
 .row {
-  margin: 0 $padding;
   height: auto;
+}
+.desktop {
+  display: none;
 }
 
 @media (min-width: 1000px) {
+  .desktop {
+    display: block;
+  }
   .row {
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
-    margin: 0 $padding--desktop;
+    height: 100%;
+
+    &--align-center {
+      align-items: center;
+    }
 
     .col-1 {
       width: calc(100% / 6);
