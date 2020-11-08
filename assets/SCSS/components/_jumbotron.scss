@@ -1,9 +1,20 @@
 .jumbotron {
   height: 85vh;
-  padding: $padding--desktop $padding;
   overflow: hidden;
+  position: relative;
 
-  .row {background-color: transparent;}
+  #particles-js {
+    height: 100%;
+  }
+  .row {
+    padding: $padding--desktop $padding;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
 
   &__heading {
     &--sub {
@@ -21,6 +32,10 @@
     margin: 2rem 0 0;
   }
 
+  .btn--primary {
+    margin-right: 3rem;
+  }
+
   &__img {
     display: none;
   }
@@ -29,8 +44,11 @@
 
 @media (min-width: 1000px) {
   .jumbotron {
-    padding: $padding--desktop;
     height: 90vh;
+
+    .row {
+      padding: $padding--desktop;
+    }
 
     &__heading {
       &--sub {

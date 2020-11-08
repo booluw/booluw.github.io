@@ -50,6 +50,16 @@
       <div class="placeholder" id="contact"></div>
       <div class="row">
         <div class="col-2">
+          <div class="section">
+            <h3 class="heading--sub">technologies i prefer to work with</h3>
+            <ul class="section__list">
+              <li>VUE JS</li>
+              <li>Nuxt JS</li>
+              <li>Sass</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
           <p class="paragraph">
             Would really love to hear from you!
           </p>
@@ -69,16 +79,6 @@
               <span>&rarr;</span>
             </a></li>
           </ul>
-        </div>
-        <div class="col-2">
-          <div class="section">
-            <h3 class="heading--sub">technologies i prefer to work with</h3>
-            <ul class="section__list">
-              <li>VUE JS</li>
-              <li>Nuxt JS</li>
-              <li>Sass</li>
-            </ul>
-          </div>
         </div>
         <div class="col-2"></div>
       </div>

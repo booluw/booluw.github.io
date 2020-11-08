@@ -13,9 +13,14 @@
     justify-content: space-between;
   }
 
-  &:hover {
+  &:hover, &--primary {
     color: white;
     background-color: $color-base;
+  }
+
+  &--primary:hover {
+    color: $color-base;
+    background-color: white;
   }
 
   & > span {

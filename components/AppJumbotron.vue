@@ -1,5 +1,6 @@
 <template>
   <section class="jumbotron">
+  <vue-particles color="#006eb3" shapeType="star" :particleSize="5" :particleOpacity="0.3" :particlesNumber="50"></vue-particles>
     <div class="row row--align-center">
       <div class="col-1 desktop">
         <!--- //Image not yet ready -->
@@ -14,6 +15,9 @@
           <p class="paragraph">
             FrontEnd web developer and CS student. Currently available for remote jobs.
           </p>
+          <a href="https://docs.google.com/document/d/1QwcjFuw6chztKCYIqZjjGfrNDJVNcfEsEfi9V0eySUM/edit?usp=sharing" class="btn btn--link btn--primary">
+            My Resume
+          </a>
           <a href="mailto:jaycewap@gmail.com" class="btn btn--link btn--justify-between jumbotron__btn">
             Hire me
             <span>&rarr;</span>
