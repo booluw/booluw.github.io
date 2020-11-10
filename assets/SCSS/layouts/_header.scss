@@ -21,9 +21,20 @@
     color: $color-base;
   }
 
+  .hamburger-container {
+    flex-basis: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-white;
+    font-weight: 300;
+    opacity: .8;
+    font-size: 1.4rem;
+  }
+
   &__hamburger {
     display: block;
-    flex-basis: 10%;
+    flex-basis: 40%;
     cursor: pointer;
 
     .line {
@@ -32,6 +43,14 @@
       width: 100%;
       background-color: $color-base;
       transition: transform .3s ease-in-out;
+
+      &:nth-of-type(even) {
+        width: 70%;
+      }
+
+      &:last-of-type {
+        margin: 0 0 0 0;
+      }
     }
   }
 
@@ -47,6 +66,10 @@
     color: white;
     padding: $padding--desktop $padding;
     transition: transform .5s ease-in-out;
+
+    .hamburger-container {
+      color: white;
+    }
 
     .header__hamburger {
 
@@ -112,13 +135,19 @@
   display: none;
 
   &:checked {
-    & ~ .header__hamburger,
-    & ~ .header__nav .nav-header .header__hamburger {
+    & ~ .hamburger-container .header__hamburger,
+    & ~ .header__nav .nav-header .hamburger-container .header__hamburger {
+      transform: translate(5px, 0);
+      
       .line {
-        transform: rotate(45deg) translate(-2px, 0);
+        transform: rotate(45deg) translate(-1px, 3px);
+
+        &:nth-of-type(even) {
+          opacity: 0;
+        }
 
         &:last-of-type {
-          transform: rotate(-45deg) translate(3px, -5px);
+          transform: rotate(-45deg) translate(2px, -7px);
         }
       }
     }
@@ -138,8 +167,13 @@
       font-size: 3rem;
     }
 
+    .hamburger-container {
+      color: $color-grey;
+      flex-basis: 10rem;
+    }
+
     &__hamburger {
-      flex-basis: 3%;
+      flex-basis: 4rem;
       
       .line {
         padding: .1rem;
@@ -154,6 +188,10 @@
 
   .nav-header {
     
+    .hamburger-container {
+      color: $color-white;
+    }
+
     &__text {
       width: 15%!important;
       margin: 0 10rem 0!important;
@@ -175,11 +213,21 @@
   #menu-toggler {
   
     &:checked {
-      & ~ .header__hamburger,
-      & ~ .header__nav .nav-header .header__hamburger {
-        .line {
-          transform: rotate(45deg) translate(-1px, 2px);
+      & ~ .header__hamburger .hamburger-container,
+      & ~ .header__nav .nav-header .hamburger-container .header__hamburger {
+        transform: translate(0, 5px)!important;
+      
+      .line {
+        transform: rotate(45deg) translate(-1px, 5px)!important;
+
+        &:nth-of-type(even) {
+          opacity: 0;
         }
+
+        &:last-of-type {
+          transform: rotate(-45deg) translate(5px, -12px)!important;
+        }
+      }
       }
     }
   }

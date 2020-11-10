@@ -14,6 +14,7 @@
 
   &__slider {
     display: flex;
+    justify-content: space-between;
     overflow: auto hidden;
     margin: $padding 0 0;
     scroll-snap-type: x mandatory;
@@ -28,7 +29,7 @@
     }
 
     & > *:not(.card) {
-      width: 35%;
+      width: 45%;
     }
 
     & > img {
@@ -52,6 +53,10 @@
 
       & > * {
         width: 25%;
+      }
+
+      & > *:not(.card) {
+        width: 35%;
       }
 
       & > img:not(:first-of-type) {

@@ -19,8 +19,7 @@
   }
 
   &--primary:hover {
-    color: $color-base;
-    background-color: white;
+    filter: grayscale(100%);
   }
 
   & > span {

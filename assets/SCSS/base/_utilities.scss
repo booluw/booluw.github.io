@@ -1,6 +1,10 @@
 .u {
   &-placeholder {
     padding: $padding 0 0;
+
+    &--big {
+      padding: $padding--desktop 0 0;
+    }
   }
 }
 

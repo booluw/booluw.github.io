@@ -2,16 +2,16 @@
   <main>
     <app-jumbotron />
     <section class="section">
-      <p class="paragraph paragraph--w-80">
+      <p class="paragraph">
         I am a website developer and consultant based in Nigeria.
-        Through the years I have worked on side and freelanced projects that are user friendily,
-        fast and mobile responsible.
+        Through the years I have worked on side and freelance projects that are user friendly,
+        fast and mobile responsive.
         <br /><br />
         My goal is to add value to your organisation's overall Internet performance and join your team to build
-        web products that will drive the force to achieve your sale goals.
+        web products that will drive the force to achieve your goals.
       </p>
     </section>
-    <div class="u-placeholder"></div>
+    <div class="u-placeholder u-placeholder--big"></div>
     <section class="section" id="projects">
       <h3 class="heading--sub">Brands I've worked with</h3>
       <div class="section__slider">
@@ -19,7 +19,7 @@
         <img src="/img/CRYPTOWISE.jpg" alt="Cryptowise Logo" />
       </div>
     </section>
-    <div class="u-placeholder"></div>
+    <div class="u-placeholder u-placeholder--big"></div>
     <section class="section">
       <h3 class="heading--sub">Projects I've worked on</h3>
       <div class="section__slider">
