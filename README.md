@@ -1,4 +1,8 @@
-# STATIC
+# Portfolio redesign
+
+Rebuilt my portfolio from scratch in Nuxt JS. Live preview => https://booluw.me
+
+## STATIC
 
 **This directory is not required, you can delete it if you don't want to use it.**
 
